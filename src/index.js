@@ -1,5 +1,13 @@
 document  //document gives access to the DOM
 
+//const axios = require("axios")
+// async function api() {
+//     const { data } = await axios.get("https://www.googleapis.com/books/v1/users/uid=109437390009032914490/bookshelves/as_coll=1001");
+//     return console.log(data);
+// }
+
+// console.log(api())
+
 const books = [
     "The Vegetarian",
     "Strange Stars",
@@ -25,7 +33,3 @@ const btn = document.querySelector("button");
 btn.addEventListener("click", (event) => {
         document.getElementById("message").innerHTML = bookSelector(books);
  });
-
-
-
-    
