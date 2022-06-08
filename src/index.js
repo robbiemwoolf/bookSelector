@@ -1,12 +1,24 @@
 document  //document gives access to the DOM
 
-//const axios = require("axios")
-// async function api() {
-//     const { data } = await axios.get("https://www.googleapis.com/books/v1/users/uid=109437390009032914490/bookshelves/as_coll=1001");
-//     return console.log(data);
+// const axios = require("axios");
+
+// google books API documentation https://developers.google.com/books/docs/v1/using#RetrievingBookshelf
+
+// const userId = "109437390009032914490";
+// const shelfId = "1001";
+// const BASE_URL = "https://www.googleapis.com/books/v1/users/";
+
+// want to access specific public bookshelf
+
+// function googleAPI() {
+//     axios
+//         .get(`${BASE_URL}${userId}/bookshelves/${shelfId}`)
+//         .then(response => {
+//             console.log(response)
+//         });
 // }
 
-// console.log(api())
+// console.log(googleAPI())
 
 const books = [
     "The Vegetarian",
