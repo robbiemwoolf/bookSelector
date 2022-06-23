@@ -7,10 +7,12 @@ This application is my solution. It is meant to return a book title from the boo
 
 ## Design
 ### First Iteration
-The first iteration simply returns a random book title from inputed array. This array is a small list of my book titles.
+The first iteration simply returned a random book with given book array. Using HTML, CSS, and simple JS.
+### This Design
+Same as first but using ReactJS.
+
 ### Later Design
 Utilize google books api to pull random book from a specific bookshelf under my google books acount. This now gives me access to parse books based on genre. Instead of returning just a title, I should be able to return a book cover that can then display the other book information.
 
 ## Resources
 * google books API documentation: https://developers.google.com/books/docs/v1/using#RetrievingBookshelf
-
