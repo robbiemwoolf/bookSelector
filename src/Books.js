@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // google books API documentation https://developers.google.com/books/docs/v1/using#RetrievingBookshelf
 
@@ -10,18 +10,18 @@ import React, { useEffect } from "react";
 
 
 function Books() {
-    const userId = "109437390009032914490";
-    const shelf = "1001";
-    const url = `https://www.googleapis.com/books/v1/users/${userId}/bookshelves/${shelf}/volumes`;
-    
-   [books, setBooks] = useState({});
+  const userId = "109437390009032914490";
+  const shelf = "1001";
+  const url = `https://www.googleapis.com/books/v1/users/${userId}/bookshelves/${shelf}/volumes`;
+   
+  const [data, setData] = useState({})
 
   useEffect(() => {
     fetch(url)
-      .then((response) => response.data)
-      .then(setBooks);
+      .then((response) => response.json())
+      .then(setData);
   }, []);
-  return (response.data);
+  console.log(data)
 }
 
 export default Books;
