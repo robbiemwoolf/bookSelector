@@ -1,23 +1,14 @@
-import React, { useState } from "react";
 import './App.css';
-import BookSelector from './BookSelector';
+import React from 'react';
+import Books from './Books';
 
-const books = [
-  "The Vegetarian",
-  "Strange Stars",
-  "An Unquiet Mind",
-  "Suncatcher",
-  "Squad",
-  "House of Leaves",
-  "Magic: A History",
-  "Human Remains comics",
-]
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <BookSelector books={books}/>
+        <Books />
       </header>
     </div>
   );
